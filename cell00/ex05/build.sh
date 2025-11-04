@@ -1,10 +1,11 @@
 #!/bin/bash
-if [ "$#" -eq 0 ]; then
-    echo "No arguments supplied"
-    exit 1
+if [ $# -eq 0 ]
+then
+    echo "No arguments supplied";
+    exit;
 fi
-for arg in "$@"; do
-    
-    folder_name="ex$arg"
-    mkdir "$folder_name"
+
+for i in "$@";
+do
+    mkdir "ex$i";
 done
